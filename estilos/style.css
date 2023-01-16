@@ -116,55 +116,7 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
 
-    body {
-        background-image: linear-gradient(to top, #37123C, #A5B5BF);
-    }
-
-    #login {
-        width: 700px;
-        height: 250px;
-    }
-
-    #imagem > img {
-        height: 500px;
-    }
-
-    #formulario {
-        position: absolute;
-        right: -1px;
-        top: -10px;
-        height: 280px;
-        width: 480px;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .form > input {
-        width: 84%;
-    }
 }
-
 @media screen and (min-width: 990px) {
-    main {
-        background-position: left center;
-        transform: translateY(50%);
-        width: 800px;
-        height: 200px;
-    }
-
-    div {
-        position: absolute;
-        top: -100px;
-        float: left;
-        width: 400px;
-        height: 280px;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-       }
-
-    .form > input {
-        width: 81%;
-    }
+    
 }
