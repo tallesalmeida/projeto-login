@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/*Versão Mobile First*/
+
+/*Cores
+- #37123C
+- #A5B5BF
+- #38686A */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #37123ce0;
+}
+
+main {
+    margin: auto;
+    width: 250px;
+    height: 130px;
+    background: url(../imagens/imagem.jpg) no-repeat center center;
+    padding-top: 100px;
+    margin-top: 50px;
+    border-radius: 30px;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div {
+    text-align: center;
+    background-color: white;
+    height: 285px;
+    margin-top: 100px;
+    padding: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+div > p {
+    font-size: 13px;
+    text-align: left;
+    width: 98%;
+    padding: 5px;
+}
+
+.form {
+    margin: auto;
+    width: 98%;
+    height: 30px;
+    background-color: #4d1b53ec;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form > input {
+    position: absolute;
+    background-color: #81d5da;
+    border-radius: 8px;
+    width: 174px;
+    margin-left: 10px;
+    margin-top: -2px;
+    padding: 9px;
+    border: none;
+}
+
+.botao > input {
+    width: 100%;
+    margin: auto;
+    background-color: #6bb2b6;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 15px;
+    color: rgb(245, 242, 242);
+}
+
+.botao > input:hover {
+    cursor: pointer;
+    background-color: #335b5e;
+    transition: .5s;
+}
+
+.material-symbols-outlined {
+    color: rgba(255, 255, 255, 0.884);
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+    body {
+        background-image: linear-gradient(to top, #37123C, #A5B5BF);
+    }
+
+    main {
+        transform: translateY(50%);
+        background-position: right center;
+        width: 700px;
+        height: 150px;
+    }
+
+    div {
+        position: absolute;
+        right: -1px;
+        top: -100px;
+        height: 230px;
+        width: 480px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .form > input {
+        width: 84%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    main {
+        background-position: left center;
+        transform: translateY(50%);
+        width: 800px;
+        height: 200px;
+    }
+
+    div {
+        position: absolute;
+        top: -100px;
+        float: left;
+        width: 400px;
+        height: 280px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+       }
+
+    .form > input {
+        width: 81%;
+    }
+}
