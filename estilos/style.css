@@ -20,19 +20,15 @@ body, html {
 }
 
 main {
-    position: relative;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*pra ficar no centro certinho tem que fazer no main*/
 }
 
 #login {
-    position: absolute;
-    width: 250px;
-    height: 500px;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -42,7 +38,7 @@ main {
     background-size: cover;
     background-position: left center;
     width: 300px;
-    height: 210px;
+    height: 200px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-bottom: -4px;
@@ -51,7 +47,7 @@ main {
 #formulario {
     text-align: center;
     background-color: white;
-    height: 265px;
+    height: 260px;
     width: 280px;
     padding: 10px;
     border-bottom-right-radius: 20px;
@@ -71,7 +67,6 @@ h1 {
 }
 
 .form {
-    margin: auto;
     width: 98%;
     height: 30px;
     background-color: #4d1b53ec;
@@ -94,10 +89,10 @@ h1 {
 
 .botao > input {
     width: 100%;
-    margin: auto;
     background-color: #6bb2b6;
     border-radius: 5px;
     padding: 8px;
+    margin-top: 1px;
     margin-bottom: 5px;
     border: none;
     font-size: 15px;
@@ -115,8 +110,62 @@ h1 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
+    
+    body {
+        background-image: linear-gradient(to top, #37123C, #A5B5BF);
+    }
+
+    #login {
+    display: flex;
+   }
+
+   #formulario {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    width: 350px;
+   }
+
+   #imagem {
+    height: 280px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    width: 250px;
+    background-position: right bottom;
+   }
+
+   .form > input {
+    width: 297px;
+   }
+
 
 }
+
 @media screen and (min-width: 990px) {
+        
+    body {
+        background-image: linear-gradient(to top, #37123C, #A5B5BF);
+    }
     
+    #login {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    #formulario {
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 0px;
+        width: 350px;
+       }
+    
+       #imagem {
+        height: 280px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+        width: 250px;
+        background-position: left top;
+       }
+    
+       .form > input {
+        width: 297px;
+       }
 }
