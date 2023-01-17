@@ -28,11 +28,6 @@ main {
     align-items: center; /*pra ficar no centro certinho tem que fazer no main*/
 }
 
-#login {
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
-}
-
 #imagem {
     background: url(../imagens/imagem.jpg) no-repeat;
     background-size: cover;
@@ -109,6 +104,7 @@ h1 {
     color: rgba(255, 255, 255, 0.884);
 }
 
+/*Versão Tablet*/
 @media screen and (min-width: 768px) and (max-width: 990px) {
     
     body {
@@ -116,8 +112,8 @@ h1 {
     }
 
     #login {
-    display: flex;
-   }
+        display: flex;
+    }
 
    #formulario {
     border-top-right-radius: 20px;
@@ -140,6 +136,7 @@ h1 {
 
 }
 
+/*Versão desktop e telas maiores*/
 @media screen and (min-width: 990px) {
         
     body {
